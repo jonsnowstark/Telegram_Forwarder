@@ -11,4 +11,4 @@ RUN poetry install --no-root --only main
 
 COPY . .
 
-CMD gunicorn app:app & python3 main.py
+CMD gunicorn app:app & ["poetry", "run", "forwarder"]
