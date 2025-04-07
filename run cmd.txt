@@ -1,1 +1,1 @@
-gunicorn app:app & python -m forwarder
+gunicorn app:app & python3 pyproject.toml
